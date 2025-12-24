@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 250px;
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
+    }
+    
+    #status {
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    /* 成功時のスタイル（緑色の背景と濃い緑の文字） */
+    .success {
+      background-color: #e8f5e9;
+      color: #2e7d32 !important;
+      font-weight: bold;
+      border: 1px solid #c8e6c9;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* エラー時のスタイル（赤色の背景と濃い赤の文字） */
+    .error {
+      background-color: #ffebee;
+      color: #c62828 !important;
+      font-weight: bold;
+      border: 1px solid #ffcdd2;
+    }
+  </style>
+</head>
+<body>
+  <div id="status">URLを処理中...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
